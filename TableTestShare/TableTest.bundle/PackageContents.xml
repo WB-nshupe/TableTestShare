@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ApplicationPackage SchemaVersion="1.0" ProductType="Application" Name="TableTest" AppVersion="1.0.0">
+
+  <CompanyDetails Name="Test" Phone="000-000-0000" Url="http://www.test.com/" Email="test@test.com" />
+
+  <Components Description="AutoCAD 2013+">
+
+    <RuntimeRequirements SupportPath="./" Platform="AutoCAD*" SeriesMin="R19.0" />
+
+   
+    <ComponentEntry AppName="Table Test" ModuleName="./DLL/TableTestShare.dll" />
+
+
+  </Components>
+
+</ApplicationPackage>
