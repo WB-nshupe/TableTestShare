@@ -120,7 +120,8 @@ namespace TableTest.LoopTools
                 tb.Cells[tb.Rows.Count - 1, 1].TextHeight = 0.25;
 
                 tb.Cells[tb.Rows.Count - 1, 3].Contents.Add();
-                tb.Cells[tb.Rows.Count - 1, 3].Contents[0].Formula = "=Sum(D3:D" + (tb.Rows.Count - 1) + ")";
+                //tb.Cells[tb.Rows.Count - 1, 3].Contents[0].Formula = "=Sum(D3:D" + (tb.Rows.Count - 1) + ")";
+                tb.Cells[tb.Rows.Count - 1, 3].Contents[0].Formula = $"%<\\AcExpr (Sum(D3:D{(tb.Rows.Count)}))>%";
                 //Generate the layout
                 tb.GenerateLayout();
             }
